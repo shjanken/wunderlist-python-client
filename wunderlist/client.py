@@ -40,19 +40,3 @@ class WunderlistClient():
                   for task in self.get_list_tasks(id)]
 
         return [r for r in result if r.get('due_date') == today_str]
-
-
-if __name__ == '__main__':
-    def test_send_request():
-        os.environ['X-Access-Token'] = '2673a87e3fb1619117cfb3cabe6810987983218777b7eb672200c1bf2511'
-        os.environ['X-Client-ID'] = 'dbe318d9315678615714'
-
-        r = net.send_request('user')
-        print(r)
-    # test_send_request()
-
-    os.environ['X-Access-Token'] = '2673a87e3fb1619117cfb3cabe6810987983218777b7eb672200c1bf2511'
-    os.environ['X-Client-ID'] = 'dbe318d9315678615714'
-
-    c = WunderlistClient()
-    print(c.get_today_tasks())
