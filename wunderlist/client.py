@@ -1,5 +1,5 @@
-import net
-from net import WunderClientException
+from wunderlist import net
+from wunderlist.net import WunderClientException
 import os
 from datetime import date
 
