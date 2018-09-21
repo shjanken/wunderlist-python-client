@@ -4,4 +4,4 @@ client = WunderlistClient()
 
 tasks = client.get_today_tasks()
 for task in tasks:
-    print("{}".format(task.get('title')))
+    print("{}\n".format(task.get('title')))
